@@ -1,1 +1,39 @@
-/* место для вашего кода */
+/* Шапка сайта */
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  place-items: center;
+  margin-top: 92px;
+  margin-bottom: 91px;
+  margin-left: 51px;
+  margin-right: 49px;
+}
+
+.header__links {
+  display: flex;
+  gap: 20px;
+}
+.logo {
+  width: 148px;
+}
+.contacts {
+  max-width: 240px;
+  list-style: none;
+  word-wrap: break-word;
+}
+
+/* Первый раздел сайта */
+.cover__title {
+  position: absolute;
+  z-index: 1;
+  color: white;
+  font-family: "Raleway", Impact, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.cover {
+  margin-bottom: 181px;
+  z-index: 0;
+}
