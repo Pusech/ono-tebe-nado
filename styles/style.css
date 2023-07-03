@@ -24,16 +24,107 @@
 }
 
 /* Первый раздел сайта */
+
+.cover {
+  display: flex;
+  position: relative;
+  margin-bottom: 181px;
+  z-index: 0;
+  justify-content: center;
+}
+
 .cover__title {
   position: absolute;
   z-index: 1;
   color: white;
   font-family: "Raleway", Impact, sans-serif;
   font-weight: bold;
+  font-size: 100px;
   text-transform: uppercase;
+  margin-top: 165px;
+  width: 100%;
+  padding: 0 50px;
 }
 
-.cover {
+.cover__subtext {
+  position: absolute;
+  z-index: 1;
+  color: white;
+  font-family: "Raleway", Impact, sans-serif;
+  font-weight: normal;
+  font-size: 22px;
+  text-transform: uppercase;
+  top: 90%;
+}
+
+.cover__btn {
+  position: absolute;
+  z-index: 1;
+  color: white;
+  font-family: "Raleway", Impact, sans-serif;
+  font-weight: normal;
+  font-size: 22px;
+  text-transform: uppercase;
+  top: 90%;
+  left: 80%;
+}
+
+.align__center {
+  position: relative;
+  text-align: center;
+}
+
+.align__right {
+  position: relative;
+  text-align: right;
+}
+
+/* Второй раздел сайта */
+
+.lots {
   margin-bottom: 181px;
-  z-index: 0;
+}
+
+.items {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  margin: 0 50px;
+}
+
+.item__lot {
+  max-width: 430px;
+}
+
+.lot__image {
+  /* переделайка имадж на бэкграунд имадж */
+  filter: brightness(33%);
+}
+
+.lot__image:hover {
+  filter: brightness(55%);
+  /* чекни есть ли инфа сколько процентов надо в фигме */
+}
+
+.lot__title {
+  color: white;
+  position: absolute;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.lot__text {
+  position: absolute;
+  color: white;
+}
+/* Третий раздел сайта */
+.about {
+  margin-bottom: 180px;
+}
+
+/* Футер */
+
+.footer {
+  margin-bottom: 90px;
 }
