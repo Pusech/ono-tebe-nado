@@ -164,13 +164,13 @@
   position: relative;
   display: flex;
   justify-content: space-between;
-  /* gap: 25px; */
+  gap: 25px;
   list-style: none;
 }
 
 .item__lot {
   position: relative;
-  max-width: 430px;
+  /* max-width: 430px; */
   margin-bottom: 30px;
 }
 
