@@ -155,7 +155,8 @@
   font-size: 20px;
   position: relative;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  gap: 25px;
   list-style: none;
 }
 
