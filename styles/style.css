@@ -145,7 +145,7 @@
 
 .lots {
   /* margin: 0 50px 181px 50px; */
-  margin: 0 50px 180px 50px;
+  padding: 0 50px 180px 50px;
 }
 
 .items__title {
@@ -171,12 +171,13 @@
 .item__lot {
   position: relative;
   /* max-width: 430px; */
-  max-height: 430px;
   margin-bottom: 30px;
 }
 
 .lot__image {
   filter: brightness(33%);
+  width: 430px;
+  height: 450px;
 }
 
 .lot__image:hover {
