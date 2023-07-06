@@ -46,7 +46,7 @@
   /* padding: 378.5px 720px 378.5px 720px; */
   background-image: url("../images/cover.jpg");
   background-size: cover;
-  background-size: 100%;
+  /* background-size: 100%; */
 }
 
 /* .cover__image {
