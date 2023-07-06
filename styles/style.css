@@ -171,6 +171,7 @@
 .item__lot {
   position: relative;
   /* max-width: 430px; */
+  max-height: 430px;
   margin-bottom: 30px;
 }
 
