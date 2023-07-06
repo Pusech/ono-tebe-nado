@@ -15,21 +15,22 @@
 .header__links {
   display: flex;
   list-style: circle;
-  gap: 30px;
+  gap: 32px;
   text-transform: lowercase;
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 .header__links > li:first-child {
   list-style: none;
 }
 .logo {
-  margin-right: 140px;
+  margin-right: 150px;
   max-width: 135px;
 }
 .contacts {
   max-width: 240px;
   list-style: none;
   word-wrap: break-word;
+  line-height: 25px;
 }
 
 /* Первый раздел сайта */
@@ -53,13 +54,13 @@
 .cover__title {
   /* position: absolute;
   z-index: 1; */
-
   color: white;
   font-family: "Raleway", Impact, sans-serif;
   font-weight: bold;
   font-size: 100px;
   text-transform: uppercase;
   margin-top: 165px;
+  margin-bottom: 5px;
   /* width: 100%; */
   /* padding: 5px 50px 0 50px; */
   padding-left: 50px;
@@ -79,10 +80,10 @@
   text-transform: uppercase;
   /* margin-top: 190px; */
   /* top: 90%; */
-  padding: 134px 51px 0 0;
-  margin-bottom: 46px;
+  padding: 130px 50px 0 0;
+  margin-bottom: 50px;
   justify-content: end;
-  gap: 80px;
+  gap: 78px;
   align-items: center;
   word-spacing: 19px;
 }
@@ -141,7 +142,7 @@
   font-family: "Raleway", Impact, sans-serif;
   font-weight: bold;
   font-size: 40px;
-  margin-bottom: 27px;
+  margin-bottom: 24px;
   margin-left: 40px;
   text-transform: uppercase;
 }
@@ -187,7 +188,7 @@
   z-index: 1;
   position: absolute;
   color: white;
-  top: 30%;
+  top: 32%;
   display: flex;
   height: 50%;
   align-items: end;
@@ -206,7 +207,7 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 20% 80%;
-  margin: 0 50px 180px 50px;
+  margin: 0 50px 181px 40px;
 }
 
 .black-circle {
@@ -245,6 +246,7 @@
   padding-left: 15px;
   /* padding-right: 10px; */
   /* margin-top: 50px; */
+  padding-top: 5px;
 }
 
 /* .about__text:not(:last-child) {
@@ -269,7 +271,8 @@
 .footer__links {
   text-align: center;
   list-style: none;
-  text-decoration: underline;
+  text-transform: lowercase;
+  /* text-decoration: underline; */
 }
 
 .socials {
@@ -277,4 +280,9 @@
   list-style: none;
   max-width: 240px;
   gap: 48px;
+}
+
+.contacts a {
+  text-decoration: none;
+  border-bottom: solid 1px;
 }
