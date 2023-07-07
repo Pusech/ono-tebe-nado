@@ -1,8 +1,3 @@
-html {
-  font-size: 62.5%;
-  /* overflow: hidden; */
-}
-
 .overlay {
   position: absolute;
   z-index: 0;
@@ -15,10 +10,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 92px;
-  margin-bottom: 92px;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin: 92px 50px;
   font-family: "Raleway", Impact, sans-serif;
   font-weight: normal;
   font-size: 18px;
@@ -29,8 +21,8 @@ html {
   list-style: circle;
   gap: 32px;
   text-transform: lowercase;
-  /* text-decoration: underline; */
 }
+
 .header__links > li:first-child {
   list-style: none;
 }
@@ -43,6 +35,7 @@ html {
   margin-right: 145px;
   max-width: 135px;
 }
+
 .contacts {
   max-width: 240px;
   list-style: none;
@@ -53,45 +46,35 @@ html {
 /* Первый раздел сайта */
 
 .cover {
-  /* display: flex;
-  flex-direction: column; */
   position: relative;
   margin-bottom: 181px;
   z-index: 0;
-  /* width: 100%; */
-  /* justify-content: center; */
-  /* padding: 378.5px 720px 378.5px 720px; */
   background-image: url("../images/cover.jpg");
   background-size: cover;
-  /* background-size: 100%; */
 }
 
-/* .cover__image {
-  filter: brightness(60%);
-  background-size: cover;
-} */
+/* ОНО ТЕБЕ НАДО */
 .cover__title {
-  /* position: absolute;
-  z-index: 1; */
   position: relative;
   color: white;
   font-family: "Raleway", Impact, sans-serif;
   font-weight: bold;
   font-size: 100px;
   text-transform: uppercase;
-  /* margin-top: 165px;*/
   padding-top: 165px;
-  /* width: 100%; */
-  /* padding: 5px 50px 0 50px; */
   padding-left: 50px;
-  /* letter-spacing: 0.3em; */
-  /* line-height: 1.28em;
-  line-height: 122px; */
 }
 
+.second-word {
+  padding-top: 9px;
+  padding-left: 30px;
+}
+
+.third-word {
+  padding-top: 2px;
+}
+/* Аукцион вещей в которые никто не верил */
 .cover__subtext {
-  /* position: absolute;
-  z-index: 1; */
   position: relative;
   display: flex;
   color: white;
@@ -99,8 +82,6 @@ html {
   font-weight: normal;
   font-size: 22px;
   text-transform: uppercase;
-  /* margin-top: 190px; */
-  /* top: 90%; */
   padding: 126px 50px 50px 0;
   justify-content: end;
   gap: 78px;
@@ -109,8 +90,6 @@ html {
 }
 
 .cover__btn {
-  /* position: absolute;
-  z-index: 1; */
   position: relative;
   color: white;
   font-family: "Raleway", Impact, sans-serif;
@@ -152,19 +131,9 @@ html {
   letter-spacing: 0.3em;
 }
 
-.second-word {
-  padding-top: 9px;
-  padding-left: 30px;
-}
-
-.third-word {
-  padding-top: 2px;
-}
-
 /* Второй раздел сайта */
 
-.lots {
-  /* margin: 0 50px 181px 50px; */
+.cards {
   padding: 0 50px 180px 50px;
 }
 
@@ -183,27 +152,22 @@ html {
   font-size: 20px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  /* justify-content: space-between; */
   gap: 25px;
   list-style: none;
 }
 
-.item__lot {
+.item__card {
   background-size: cover;
-  /* max-width: 430px; */
   margin-bottom: 26px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 30px;
   position: relative;
-  /* padding: 55px 40px 55px 40px; */
 }
 
-.lot__title {
-  padding: 55px 40px 0 40px;
-  /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-  /* z-index: 1; */
+.card__title {
+  margin: 55px 40px 0 40px;
   color: white;
   font-family: "Raleway", Impact, sans-serif;
   font-weight: bold;
@@ -211,27 +175,20 @@ html {
   text-transform: uppercase;
   text-decoration: underline;
   word-wrap: break-word;
-  /* margin: 50px 40px 0 40px; */
   position: relative;
   z-index: 1;
 }
 
-.lot__text {
+.card__text {
   padding: 0 40px 55px 40px;
-  /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-
   display: flex;
-  /* z-index: 1; */
   color: white;
   line-height: 24px;
-  /* align-self: flex-end; */
-  /* align-items: end; */
-  /* margin: 30px 40px 0 40px; */
   position: relative;
   z-index: 1;
 }
 
-.lots__more {
+.cards__more {
   font-family: "Raleway", Impact, sans-serif;
   font-weight: normal;
   font-size: 20px;
@@ -250,6 +207,7 @@ html {
 .image_three {
   background-image: url("../images/card-lot-03.jpg");
 }
+
 /* Третий раздел сайта */
 .about {
   display: grid;
@@ -290,20 +248,13 @@ html {
   font-size: 20px;
   grid-column: 2;
   grid-row: 2;
-  /* gap: 55px; */
   align-self: end;
   padding-left: 15px;
-  /* padding-right: 10px; */
-  /* margin-top: 50px; */
   padding-top: 11px;
 }
 
-/* .about__text:not(:last-child) {
-  margin-bottom: 100px;
-} */
-
 .about__text p:not(:last-child) {
-  margin-bottom: 27px; /* Add a margin-bottom of 20 pixels */
+  margin-bottom: 27px;
 }
 
 /* Футер */
@@ -321,7 +272,6 @@ html {
   text-align: center;
   list-style: none;
   text-transform: lowercase;
-  /* text-decoration: underline; */
 }
 
 .footer__links > li:first-child a {
