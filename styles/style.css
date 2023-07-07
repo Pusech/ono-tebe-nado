@@ -175,7 +175,7 @@ html {
 
 .item__lot {
   position: relative;
-  background-image: url(/images/card-lot-01.jpg);
+  background-image: url("../images/card-lot-01.jpg");
   /* max-width: 430px; */
   margin-bottom: 30px;
   padding: 55px 40px;
