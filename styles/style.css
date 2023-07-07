@@ -1,7 +1,15 @@
 html {
   font-size: 62.5%;
+  /* overflow: hidden; */
 }
 
+.overlay {
+  position: absolute;
+  z-index: 0;
+  background-color: rgb(0 0 0/0.6);
+  height: 100%;
+  width: 100%;
+}
 /* Шапка сайта */
 .header {
   display: flex;
@@ -26,6 +34,11 @@ html {
 .header__links > li:first-child {
   list-style: none;
 }
+
+.header__links > li:first-child a {
+  text-decoration: none;
+}
+
 .logo {
   margin-right: 145px;
   max-width: 135px;
@@ -40,12 +53,12 @@ html {
 /* Первый раздел сайта */
 
 .cover {
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
   position: relative;
   margin-bottom: 181px;
   z-index: 0;
-  width: 100%;
+  /* width: 100%; */
   /* justify-content: center; */
   /* padding: 378.5px 720px 378.5px 720px; */
   background-image: url("../images/cover.jpg");
@@ -60,6 +73,7 @@ html {
 .cover__title {
   /* position: absolute;
   z-index: 1; */
+  position: relative;
   color: white;
   font-family: "Raleway", Impact, sans-serif;
   font-weight: bold;
@@ -78,6 +92,7 @@ html {
 .cover__subtext {
   /* position: absolute;
   z-index: 1; */
+  position: relative;
   display: flex;
   color: white;
   font-family: "Raleway", Impact, sans-serif;
@@ -96,6 +111,7 @@ html {
 .cover__btn {
   /* position: absolute;
   z-index: 1; */
+  position: relative;
   color: white;
   font-family: "Raleway", Impact, sans-serif;
   font-weight: normal;
@@ -165,7 +181,6 @@ html {
   font-family: "Raleway", Impact, sans-serif;
   font-weight: normal;
   font-size: 20px;
-  position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   /* justify-content: space-between; */
@@ -174,18 +189,20 @@ html {
 }
 
 .item__lot {
-  position: relative;
-  background-image: url("../images/card-lot-01.jpg");
+  background-size: cover;
   /* max-width: 430px; */
-  margin-bottom: 30px;
-  padding: 55px 40px;
+  margin-bottom: 26px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 31px;
+  gap: 30px;
+  position: relative;
+  /* padding: 55px 40px 55px 40px; */
 }
 
 .lot__title {
+  padding: 55px 40px 0 40px;
+  /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
   /* z-index: 1; */
   color: white;
   font-family: "Raleway", Impact, sans-serif;
@@ -195,15 +212,23 @@ html {
   text-decoration: underline;
   word-wrap: break-word;
   /* margin: 50px 40px 0 40px; */
+  position: relative;
+  z-index: 1;
 }
 
 .lot__text {
+  padding: 0 40px 55px 40px;
+  /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+  display: flex;
   /* z-index: 1; */
   color: white;
   line-height: 24px;
   /* align-self: flex-end; */
   /* align-items: end; */
   /* margin: 30px 40px 0 40px; */
+  position: relative;
+  z-index: 1;
 }
 
 .lots__more {
@@ -212,6 +237,18 @@ html {
   font-size: 20px;
   margin-left: 40px;
   text-transform: lowercase;
+}
+
+.image_one {
+  background-image: url("../images/card-lot-01.jpg");
+}
+
+.image_two {
+  background-image: url("../images/card-lot-02.jpg");
+}
+
+.image_three {
+  background-image: url("../images/card-lot-03.jpg");
 }
 /* Третий раздел сайта */
 .about {
@@ -245,7 +282,7 @@ html {
   grid-row: 2;
   align-self: start;
   padding-left: 15px;
-  padding-top: 10px;
+  padding-top: 7px;
 }
 .about__text {
   font-family: "Raleway", sans-serif;
@@ -258,7 +295,7 @@ html {
   padding-left: 15px;
   /* padding-right: 10px; */
   /* margin-top: 50px; */
-  padding-top: 10px;
+  padding-top: 11px;
 }
 
 /* .about__text:not(:last-child) {
@@ -285,6 +322,10 @@ html {
   list-style: none;
   text-transform: lowercase;
   /* text-decoration: underline; */
+}
+
+.footer__links > li:first-child a {
+  text-decoration: none;
 }
 
 .socials {
