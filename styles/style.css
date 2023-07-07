@@ -31,7 +31,7 @@
   text-decoration: none;
 }
 
-.logo {
+.header__logo-image {
   margin-right: 145px;
   max-width: 135px;
 }
@@ -40,7 +40,7 @@
   max-width: 240px;
   list-style: none;
   word-wrap: break-word;
-  line-height: 25px;
+  line-height: 1.35em;
 }
 
 /* Первый раздел сайта */
@@ -74,7 +74,7 @@
   padding-top: 2px;
 }
 /* Аукцион вещей в которые никто не верил */
-.cover__subtext {
+.cover__description {
   position: relative;
   display: flex;
   color: white;
@@ -89,7 +89,7 @@
   word-spacing: 18px;
 }
 
-.cover__btn {
+.bet-button {
   position: relative;
   color: white;
   font-family: "Raleway", Impact, sans-serif;
@@ -103,11 +103,8 @@
   height: 52px;
 }
 
-.aligned__text {
-  display: block;
-}
-
 .align__center {
+  display: block;
   position: relative;
   text-align: center;
   justify-self: end;
@@ -115,6 +112,7 @@
 }
 
 .align__right {
+  display: block;
   position: relative;
   text-align: right;
   margin-right: 20px;
@@ -133,11 +131,11 @@
 
 /* Второй раздел сайта */
 
-.cards {
+.lots {
   padding: 0 50px 180px 50px;
 }
 
-.items__title {
+.lots__heading {
   font-family: "Raleway", Impact, sans-serif;
   font-weight: bold;
   font-size: 40px;
@@ -146,7 +144,7 @@
   text-transform: uppercase;
 }
 
-.items {
+.lots__card-list {
   font-family: "Raleway", Impact, sans-serif;
   font-weight: normal;
   font-size: 20px;
@@ -156,7 +154,7 @@
   list-style: none;
 }
 
-.item__card {
+.lots__card-list-item {
   background-size: cover;
   margin-bottom: 26px;
   display: flex;
@@ -183,12 +181,12 @@
   padding: 0 40px 55px 40px;
   display: flex;
   color: white;
-  line-height: 24px;
+  line-height: 1.2em;
   position: relative;
   z-index: 1;
 }
 
-.cards__more {
+.lots__look-more-link {
   font-family: "Raleway", Impact, sans-serif;
   font-weight: normal;
   font-size: 20px;
@@ -196,15 +194,15 @@
   text-transform: lowercase;
 }
 
-.image_one {
+.card_type_film {
   background-image: url("../images/card-lot-01.jpg");
 }
 
-.image_two {
+.card_type_book {
   background-image: url("../images/card-lot-02.jpg");
 }
 
-.image_three {
+.card_type_picture {
   background-image: url("../images/card-lot-03.jpg");
 }
 
@@ -216,7 +214,7 @@
   margin: 0 50px 181px 40px;
 }
 
-.black-circle {
+.about__logo {
   background-color: black;
   border-radius: 100%;
   width: 240px;
@@ -226,7 +224,7 @@
   justify-self: center;
 }
 
-.about__logo {
+.about__logo-image {
   position: relative;
   max-width: 148px;
 }
@@ -288,4 +286,8 @@
 .contacts a {
   text-decoration: none;
   border-bottom: solid 1px;
+}
+
+.address {
+  font-style: normal;
 }
