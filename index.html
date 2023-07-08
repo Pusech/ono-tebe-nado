@@ -13,17 +13,31 @@
     <header class="header">
       <nav>
         <ul class="header__links">
-          <li><a href="#main">Главная</a></li>
-          <li><a href="#lots">посмотреть лоты</a></li>
-          <li><a href="#about">об аукционе</a></li>
+          <li class="header__links--nobullit">
+            <a href="#main" class="links--nounderline">Главная</a>
+          </li>
+          <li>
+            <a href="#lots" class="links--underline">посмотреть лоты</a>
+          </li>
+          <li>
+            <a href="#about" class="links--underline">об аукционе</a>
+          </li>
         </ul>
       </nav>
       <a href="#main"
         ><img src="images/logo-black.svg" alt="logo" class="header__logo-image"
       /></a>
       <ul class="contacts">
-        <li><a href="tel:+99995555555">+9 999 555 5555</a></li>
-        <li><a href="mailto:info@sobaka.ge">info@sobaka.ge</a></li>
+        <li>
+          <a href="tel:+99995555555" class="links--underline"
+            >+9 999 555 5555</a
+          >
+        </li>
+        <li>
+          <a href="mailto:info@sobaka.ge" class="links--underline"
+            >info@sobaka.ge</a
+          >
+        </li>
         <li>
           <address class="address">
             наб. Принсенграхт 263-265, Амстердам
@@ -36,20 +50,25 @@
       <section class="cover">
         <div class="overlay"></div>
         <h1 class="cover__title">
-          <span class="letter-space"
-            >он<span class="spacing-left">о</span></span
+          <span class="first-word"
+            >о<span class="letter-space-extended">но</span></span
           >
 
-          <span class="align__center letter-space second-word">
-            теб<span class="spacing-left">е</span></span
+          <span class="align__center second-word">
+            те<span class="letter-space-extended">бе</span></span
           >
 
-          <span class="align__right letter-space third-word"
-            ><span class="spacing-right">н</span>адо</span
-          >
+          <span class="align__right third-word">
+            <span class="letter-space-extended">н</span>ад<span
+              class="no-letter-spacing"
+              >о</span
+            >
+          </span>
         </h1>
         <div class="cover__description">
-          <p>Аукцион вещей, в которые никто не верил</p>
+          <p class="cover__description-text">
+            Аукцион вещей, в которые никто не верил
+          </p>
           <button class="bet-button">Сделать ставку</button>
         </div>
       </section>
@@ -99,7 +118,9 @@
             </p>
           </li>
         </ul>
-        <a href="#" class="lots__look-more-link">Посмотреть больше</a>
+        <a href="#" class="lots__look-more-link links--underline"
+          >Посмотреть больше</a
+        >
       </section>
 
       <section class="about" id="about">
@@ -130,8 +151,16 @@
 
     <footer class="footer">
       <ul class="contacts">
-        <li><a href="tel:+99995555555">+9 999 555 5555</a></li>
-        <li><a href="mailto:info@sobaka.ge">info@sobaka.ge</a></li>
+        <li>
+          <a href="tel:+99995555555" class="links--underline"
+            >+9 999 555 5555</a
+          >
+        </li>
+        <li>
+          <a href="mailto:info@sobaka.ge" class="links--underline"
+            >info@sobaka.ge</a
+          >
+        </li>
         <li>
           <address class="address">
             наб. Принсенграхт 263-265, Амстердам
@@ -140,20 +169,33 @@
       </ul>
 
       <ul class="footer__links">
-        <li><a href="#main">Главная</a></li>
-        <li><a href="#lots">посмотреть лоты</a></li>
-        <li><a href="#about">об аукционе</a></li>
+        <li><a href="#main" class="links--nounderline">Главная</a></li>
+        <li>
+          <a href="#lots" class="links--underline">посмотреть лоты</a>
+        </li>
+        <li>
+          <a href="#about" class="links--underline">об аукционе</a>
+        </li>
       </ul>
 
       <ul class="socials">
         <li>
-          <a href="#"><img src="images/yt.svg" alt="youtube" /></a>
+          <a href="#"
+            ><img src="images/yt.svg" alt="youtube" class="socials-image"
+          /></a>
         </li>
         <li>
-          <a href="#"><img src="images/vk.svg" alt="vk" /></a>
+          <a href="#"
+            ><img src="images/vk.svg" alt="vk" class="socials-image"
+          /></a>
         </li>
         <li>
-          <a href="#"><img src="images/pinterest.svg" alt="pinterest" /></a>
+          <a href="#"
+            ><img
+              src="images/pinterest.svg"
+              alt="pinterest"
+              class="socials-image"
+          /></a>
         </li>
       </ul>
     </footer>

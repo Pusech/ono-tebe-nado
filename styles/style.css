@@ -24,16 +24,20 @@
   text-transform: lowercase;
 }
 
-.header__links > li:first-child {
+.header__links--nobullit {
   list-style: none;
 }
 
-.header__links > li:first-child a {
+.links--nounderline {
   text-decoration: none;
 }
 
+.links--underline {
+  text-decoration: none;
+  border-bottom: solid 1px;
+}
+
 .header__logo-image {
-  margin-right: 145px;
   max-width: 135px;
 }
 
@@ -53,6 +57,8 @@
   background-image: url("../images/cover.jpg");
   background-size: cover;
   background-position: center;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 /* ОНО ТЕБЕ НАДО */
@@ -64,17 +70,23 @@
   font-size: 100px;
   text-transform: uppercase;
   padding-top: 165px;
-  padding-left: 50px;
+  letter-spacing: 0.3em;
+  line-height: 100%;
+}
+
+.first-word {
+  line-height: 115%;
 }
 
 .second-word {
-  padding-top: 9px;
-  padding-left: 30px;
+  /* padding-top: 9px;
+  padding-left: 30px; */
+  /* line-height: 135px; */
+  padding: 20px 0;
+
+  /* переделать в em и переделать имена *****************************************/
 }
 
-.third-word {
-  padding-top: 2px;
-}
 /* Аукцион вещей в которые никто не верил */
 .cover__description {
   position: relative;
@@ -84,10 +96,15 @@
   font-weight: normal;
   font-size: 22px;
   text-transform: uppercase;
-  padding: 126px 50px 50px 0;
+  padding: 133px 0 50px 0;
   justify-content: end;
   gap: 78px;
   align-items: center;
+  line-height: 28px;
+}
+/* ???????????????????????????????????????????? */
+
+.cover__description-text {
   word-spacing: 18px;
 }
 
@@ -109,26 +126,27 @@
   display: block;
   position: relative;
   text-align: center;
-  justify-self: end;
-  margin-right: 110px;
+  /* justify-self: end; */
 }
 
 .align__right {
   display: block;
   position: relative;
   text-align: right;
-  margin-right: 20px;
-}
-
-.spacing-left {
-  margin-left: 0.3em;
-}
-.spacing-right {
-  margin-right: 0.3em;
 }
 
 .letter-space {
+  /* letter-spacing: 0.3em; */
   letter-spacing: 0.3em;
+}
+
+.letter-space-extended {
+  /* letter-spacing: 0.3em; */
+  letter-spacing: 0.6em;
+}
+
+.no-letter-spacing {
+  letter-spacing: 0em;
 }
 
 /* Второй раздел сайта */
@@ -140,10 +158,12 @@
 .lots__heading {
   font-family: "Raleway", Impact, sans-serif;
   font-weight: bold;
+  font-style: normal;
   font-size: 40px;
   margin-bottom: 24px;
   margin-left: 40px;
   text-transform: uppercase;
+  line-height: auto;
 }
 
 .lots__card-list {
@@ -164,6 +184,7 @@
   justify-content: space-between;
   gap: 30px;
   position: relative;
+  background-position: center;
 }
 
 .card__title {
@@ -174,9 +195,9 @@
   font-size: 22px;
   text-transform: uppercase;
   text-decoration: underline;
-  word-wrap: break-word;
   position: relative;
   z-index: 1;
+  line-height: 120%;
 }
 
 .card__text {
@@ -194,6 +215,7 @@
   font-size: 20px;
   margin-left: 40px;
   text-transform: lowercase;
+  line-height: auto;
 }
 
 .card_type_film {
@@ -213,12 +235,12 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 20% 80%;
-  margin: 0 50px 181px 40px;
+  margin: 0 50px 181px 50px;
 }
 
 .about__logo {
   background-color: black;
-  border-radius: 100%;
+  border-radius: 50%;
   width: 240px;
   height: 240px;
   display: flex;
@@ -241,6 +263,7 @@
   align-self: start;
   padding-left: 15px;
   padding-top: 7px;
+  line-height: auto;
 }
 .about__text {
   font-family: "Raleway", sans-serif;
@@ -285,7 +308,12 @@
   gap: 48px;
 }
 
-.contacts a {
+.socials-image {
+  width: 48px;
+  height: 48px;
+}
+
+.footer__links--underline {
   text-decoration: none;
   border-bottom: solid 1px;
 }
