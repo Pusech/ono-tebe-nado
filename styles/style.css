@@ -25,12 +25,9 @@ address {
 .header__links {
   display: flex;
   list-style: circle;
-  gap: 12px;
+  gap: 9px;
   text-transform: lowercase;
   justify-self: start;
-
-  /* для отцентровки кружков bullit'ов */
-  right: 5px;
 }
 
 .header__links--nobullit {
