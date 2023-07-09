@@ -171,7 +171,7 @@
   font-weight: normal;
   font-size: 20px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
   gap: 25px;
   list-style: none;
 }
@@ -233,8 +233,8 @@
 /* Третий раздел сайта */
 .about {
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: 20% 80%;
+  grid-template-columns: 32% 68%;
+  grid-template-rows: auto;
   margin: 0 50px 181px 50px;
 }
 
@@ -254,29 +254,27 @@
 }
 
 .about__title {
+  line-height: auto;
   font-family: "Raleway", Impact, sans-serif;
   font-weight: bold;
   font-size: 40px;
   text-transform: uppercase;
-  grid-column: 2;
-  grid-row: 2;
-  align-self: start;
-  padding-left: 15px;
-  padding-top: 7px;
-  line-height: auto;
+  align-self: center;
+  padding-left: 27px;
+  padding-top: 13px;
 }
+
 .about__text {
+  line-height: auto;
   font-family: "Raleway", sans-serif;
   font-weight: normal;
   font-size: 20px;
   grid-column: 2;
-  grid-row: 2;
-  align-self: end;
-  padding-left: 15px;
-  padding-top: 11px;
+  padding-left: 27px;
+  padding-top: 10px;
 }
 
-.about__text p:not(:last-child) {
+.about__text--bottom-spacing {
   margin-bottom: 27px;
 }
 
@@ -292,13 +290,10 @@
 }
 
 .footer__links {
+  line-height: auto;
   text-align: center;
   list-style: none;
   text-transform: lowercase;
-}
-
-.footer__links > li:first-child a {
-  text-decoration: none;
 }
 
 .socials {
