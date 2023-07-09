@@ -13,10 +13,10 @@ address {
 
 /* Шапка сайта */
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   margin: 92px 50px;
+  place-items: center;
   font-family: "Raleway", Impact, sans-serif;
   font-weight: normal;
   font-size: 18px;
@@ -27,6 +27,7 @@ address {
   list-style: circle;
   gap: 12px;
   text-transform: lowercase;
+  justify-self: start;
 }
 
 .header__links--nobullit {
@@ -43,7 +44,7 @@ address {
   position: relative;
 
   /* для отцентровки кружков bullit'ов */
-  /* right: 5px; */
+  right: 5px;
 }
 
 .header__logo-image {
@@ -55,9 +56,8 @@ address {
   list-style: none;
   word-wrap: break-word;
   line-height: 1.35em;
+  justify-self: end;
 }
-
-/* HEADER CONTACTS FOOTER CONTACTS ПАМЕНЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЧЯЙ */
 
 /* Первый раздел сайта */
 
@@ -85,17 +85,14 @@ address {
   line-height: 100%;
 }
 
-.first-word {
+.cover__title--lineheight {
   line-height: 115%;
 }
 
-.second-word {
-  /* padding-top: 9px;
-  padding-left: 30px; */
-  /* line-height: 135px; */
-  padding: 20px 0;
+.cover__title--lineheight-extended {
+  line-height: 1.4em;
 
-  /* переделать в em и переделать имена *****************************************/
+  /* переделать имена *****************************************/
 }
 
 /* Аукцион вещей в которые никто не верил */
@@ -107,16 +104,20 @@ address {
   font-weight: normal;
   font-size: 22px;
   text-transform: uppercase;
-  padding: 133px 0 50px 0;
+  padding: 135px 0 50px 0;
   justify-content: end;
   gap: 78px;
   align-items: center;
-  line-height: 28px;
+  line-height: 1.75em;
 }
-/* ???????????????????????????????????????????? */
 
 .cover__description-text {
   word-spacing: 18px;
+  word-spacing: 0.77em;
+}
+
+.cover__description-text--lessspacing {
+  word-spacing: 1em;
 }
 
 .bet-button {
@@ -193,16 +194,19 @@ address {
 }
 
 .lots__card-list-item {
-  background-size: cover;
   margin-bottom: 26px;
+}
+
+.card {
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 30px;
   position: relative;
   background-position: center;
+  height: 100%;
 }
-
 .card__title {
   margin: 55px 40px 0 40px;
   color: white;
