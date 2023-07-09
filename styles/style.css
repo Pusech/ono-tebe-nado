@@ -28,6 +28,9 @@ address {
   gap: 12px;
   text-transform: lowercase;
   justify-self: start;
+
+  /* для отцентровки кружков bullit'ов */
+  right: 5px;
 }
 
 .header__links--nobullit {
@@ -42,9 +45,6 @@ address {
   text-decoration: none;
   border-bottom: solid 1px;
   position: relative;
-
-  /* для отцентровки кружков bullit'ов */
-  right: 5px;
 }
 
 .header__logo-image {
@@ -91,8 +91,6 @@ address {
 
 .cover__title--lineheight-extended {
   line-height: 1.4em;
-
-  /* переделать имена *****************************************/
 }
 
 /* Аукцион вещей в которые никто не верил */
@@ -134,26 +132,24 @@ address {
   height: 52px;
 }
 
-.align__center {
+.aligned-text {
   display: block;
   position: relative;
-  text-align: center;
-  /* justify-self: end; */
 }
 
-.align__right {
-  display: block;
-  position: relative;
+.aligned-text_center {
+  text-align: center;
+}
+
+.aligned-text_right {
   text-align: right;
 }
 
 .letter-space {
-  /* letter-spacing: 0.3em; */
   letter-spacing: 0.3em;
 }
 
 .letter-space-extended {
-  /* letter-spacing: 0.3em; */
   letter-spacing: 0.6em;
 }
 
@@ -207,6 +203,7 @@ address {
   background-position: center;
   height: 100%;
 }
+
 .card__title {
   margin: 55px 40px 0 40px;
   color: white;
@@ -219,7 +216,7 @@ address {
   z-index: 1;
   line-height: 120%;
 }
-/* //////////////////////////// UNDERLINE поменять Тайтлу карты */
+
 .card__text {
   padding: 0 40px 55px 40px;
   display: flex;
@@ -253,7 +250,6 @@ address {
 /* Третий раздел сайта */
 .about {
   display: grid;
-  /* grid-template-columns: 32% 68%; */
   grid-template-columns: 32% auto;
   grid-template-rows: 32% auto;
   margin: 0 50px 181px 50px;
@@ -293,7 +289,6 @@ address {
   font-family: "Raleway", sans-serif;
   font-weight: normal;
   font-size: 20px;
-  /* align-self: end; */
   padding-left: 27px;
   padding-top: 101px;
 }
@@ -328,8 +323,8 @@ address {
 }
 
 .socials-image {
-  width: 48px;
-  height: 48px;
+  max-width: 48px;
+  max-height: 48px;
 }
 
 .footer__links--underline {
@@ -341,4 +336,17 @@ address {
   font-style: normal;
 }
 
-/* адресс поменяй футер адресс и хэдер адресс */
+/* Хавер эффекты */
+:link {
+  transition: all 0.3s ease-out;
+}
+
+:link:hover {
+  transform: scale(110%);
+  font-size: 106%;
+  transition-duration: 0.4s;
+}
+
+.lots__look-more-link:hover {
+  font-size: 130%;
+}
