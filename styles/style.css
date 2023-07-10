@@ -22,13 +22,18 @@ address {
   font-size: 18px;
 }
 
+.header__menu {
+  justify-self: start;
+}
+
 .header__links {
   display: flex;
   list-style: circle;
-  gap: 9px;
+  gap: 33px;
   text-transform: lowercase;
-  justify-self: start;
 }
+
+/* все таки отцентровать попробовать кружки *******************/
 
 .header__links--nobullit {
   list-style: none;
@@ -50,7 +55,6 @@ address {
 
 .contacts {
   max-width: 240px;
-  list-style: none;
   word-wrap: break-word;
   line-height: 1.35em;
   justify-self: end;
@@ -107,7 +111,6 @@ address {
 }
 
 .cover__description-text {
-  word-spacing: 18px;
   word-spacing: 0.77em;
 }
 
@@ -184,6 +187,7 @@ address {
 .card-link {
   text-decoration: none;
   display: flex;
+  height: 100%;
 }
 
 .lots__card-list-item {
@@ -286,7 +290,7 @@ address {
   font-family: "Raleway", sans-serif;
   font-weight: normal;
   font-size: 20px;
-  padding-left: 27px;
+  padding-left: 26px;
   padding-top: 101px;
 }
 
