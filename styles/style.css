@@ -33,8 +33,6 @@ address {
   text-transform: lowercase;
 }
 
-/* все таки отцентровать попробовать кружки *******************/
-
 .header__links--nobullit {
   list-style: none;
 }
