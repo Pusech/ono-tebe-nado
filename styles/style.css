@@ -7,10 +7,6 @@
   width: 100%;
 }
 
-address {
-  font-style: normal;
-}
-
 /* Шапка сайта */
 .header {
   display: grid;
@@ -37,12 +33,11 @@ address {
   list-style: none;
 }
 
-.links--nounderline {
+.link {
   text-decoration: none;
 }
 
-.links--underline {
-  text-decoration: none;
+.header__link_active {
   border-bottom: solid 1px;
   position: relative;
 }
@@ -88,10 +83,6 @@ address {
   line-height: 115%;
 }
 
-.cover__title--lineheight-extended {
-  line-height: 1.4em;
-}
-
 /* Аукцион вещей в которые никто не верил */
 .cover__description {
   position: relative;
@@ -133,6 +124,7 @@ address {
 .aligned-text {
   display: block;
   position: relative;
+  padding-top: 20px;
 }
 
 .aligned-text_center {
@@ -169,7 +161,7 @@ address {
   margin-bottom: 24px;
   margin-left: 40px;
   text-transform: uppercase;
-  line-height: auto;
+  line-height: normal;
 }
 
 .lots__card-list {
@@ -219,10 +211,11 @@ address {
 .card__text {
   padding: 0 40px 55px 40px;
   display: flex;
-  color: white;
-  line-height: 1.2em;
   position: relative;
   z-index: 1;
+  font-size: 20px;
+  color: white;
+  line-height: 1.2em;
 }
 
 .lots__look-more-link {
@@ -231,7 +224,7 @@ address {
   font-size: 20px;
   margin-left: 40px;
   text-transform: lowercase;
-  line-height: auto;
+  line-height: normal;
 }
 
 .card_type_film {
@@ -274,7 +267,7 @@ address {
 }
 
 .about__title {
-  line-height: auto;
+  line-height: normal;
   font-family: "Raleway", Impact, sans-serif;
   font-weight: bold;
   font-size: 40px;
@@ -284,7 +277,7 @@ address {
 }
 
 .about__text {
-  line-height: auto;
+  line-height: normal;
   font-family: "Raleway", sans-serif;
   font-weight: normal;
   font-size: 20px;
@@ -292,8 +285,12 @@ address {
   padding-top: 101px;
 }
 
-.about__text--bottom-spacing {
-  margin-bottom: 27px;
+.about__text p {
+  margin-bottom: 1.35em;
+}
+
+.about__text p:last-child {
+  margin-bottom: 0;
 }
 
 /* Футер */
@@ -307,8 +304,8 @@ address {
   font-size: 18px;
 }
 
-.footer__links {
-  line-height: auto;
+.footer__menu-list {
+  line-height: normal;
   text-align: center;
   list-style: none;
   text-transform: lowercase;
@@ -322,12 +319,15 @@ address {
 }
 
 .socials-image {
-  max-width: 48px;
-  max-height: 48px;
+  width: 48px;
+  height: 48px;
 }
 
-.footer__links--underline {
+.footer__menu-link {
   text-decoration: none;
+}
+
+.footer__menu-link_active {
   border-bottom: solid 1px;
 }
 
@@ -341,7 +341,7 @@ address {
 }
 
 :link:hover {
-  transform: scale(110%);
+  transform: scale(1.1);
   font-size: 106%;
   transition-duration: 0.4s;
 }
