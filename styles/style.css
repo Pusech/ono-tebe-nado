@@ -251,7 +251,7 @@ address {
   display: grid;
   grid-template-columns: 32% auto;
   grid-template-rows: 32% auto;
-  margin: 0 50px 237px 50px;
+  margin: 0 50px 180px 50px;
 }
 
 .about__column {
