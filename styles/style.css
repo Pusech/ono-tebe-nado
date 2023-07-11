@@ -22,24 +22,24 @@
   justify-self: start;
 }
 
-.header__links {
+.header__menu-list {
   display: flex;
   list-style: circle;
   gap: 33px;
   text-transform: lowercase;
 }
 
-.header__links--nobullit {
+.header__list--nobullit {
   list-style: none;
 }
 
-.link {
+.header__link {
   text-decoration: none;
+  border-bottom: solid 1px;
 }
 
 .header__link_active {
-  border-bottom: solid 1px;
-  position: relative;
+  border-bottom: none;
 }
 
 .header__logo-image {
@@ -168,10 +168,10 @@
   font-family: "Raleway", Impact, sans-serif;
   font-weight: normal;
   font-size: 20px;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
   gap: 25px;
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .card-link {
@@ -182,6 +182,9 @@
 
 .lots__card-list-item {
   margin-bottom: 26px;
+  flex-grow: 1;
+  width: 32%;
+  min-height: 420px;
 }
 
 .card {
@@ -311,6 +314,15 @@
   text-transform: lowercase;
 }
 
+.footer__link {
+  text-decoration: none;
+  border-bottom: solid 1px;
+}
+
+.footer__link_active {
+  border-bottom: none;
+}
+
 .footer__socials {
   display: flex;
   list-style: none;
@@ -323,14 +335,6 @@
   height: 48px;
 }
 
-.footer__menu-link {
-  text-decoration: none;
-}
-
-.footer__menu-link_active {
-  border-bottom: solid 1px;
-}
-/* .выаыа */
 .address {
   font-style: normal;
 }
