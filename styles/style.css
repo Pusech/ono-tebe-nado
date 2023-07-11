@@ -29,7 +29,7 @@
   text-transform: lowercase;
 }
 
-.header__list--nobullit {
+.header__link--nobullit {
   list-style: none;
 }
 
@@ -228,6 +228,8 @@
   margin-left: 40px;
   text-transform: lowercase;
   line-height: normal;
+  text-decoration: none;
+  border-bottom: 1px solid;
 }
 
 .card_type_film {
